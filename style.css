@@ -1,0 +1,24 @@
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: aqua;
+      text-align: center;
+  }
+  img{
+
+    /* going left and right */
+      transform: translateX(200px);
+      /* up and down */
+      transform: translateY(200px);
+      /* shrink or extend, scaleX ScaleY */
+      transform: scale(1.4);
+      transform: scale(1.4);
+      /* this will rotate the image, you can use X or Y */
+      /* at 90 it will disappear */
+      /* rotate Z will run like a clock */
+      transform: rotateX(60deg) scale(2);
+
+  }
