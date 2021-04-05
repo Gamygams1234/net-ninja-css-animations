@@ -48,6 +48,9 @@ html, body{
   /* placing the name of the animation and the time of the animation */
 animation-name: drive;
 animation-duration: 5s;
+/* this will keep it at the end */
+animation-fill-mode: forwards;
+animation-delay: 2s;
 }
 
 /*// KEYFRAMES //*/
