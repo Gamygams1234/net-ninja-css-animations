@@ -41,10 +41,28 @@ html, body{
 
 /*// ELEMENTS TO ANIMATE //*/
 
-
+.mario{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  /* placing the name of the animation and the time of the animation */
+animation-name: drive;
+animation-duration: 5s;
+}
 
 /*// KEYFRAMES //*/
 
+
+/* mating the animation */
+@keyframes drive{
+
+  from{
+transform: translateX(0);
+  }
+  to{
+    transform: translateX(500px);
+  }
+}
 
 
 
