@@ -19,11 +19,13 @@ h1{
 .panels{
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .panels li{
   position: relative;
-  width: 25%;
+
   margin: 0;
   display: block;
   box-sizing: border-box;
@@ -44,6 +46,34 @@ h1{
 
 /*// ANIMATION STYLES //*/
 
+
+.panels div.back{
+  transform: rotateY(90deg);
+}
+/*  this is taking out of document flor */
+.panels div.front{
+  position: absolute;
+}
+
+/* we are putting everything forward */
+.panels li:hover div.front{
+animation: twirl .2s ease-in forwards;
+}
+.panels li:hover div.back{
+animation: twirl .2s .2s ease-out forwards reverse;
+}
+
+
+@keyframes twirl{
+
+  0% {
+    transform: rotateY(0deg)
+  }
+  100% {
+    transform: rotateY(90deg)
+  }
+
+}
 
 
 
