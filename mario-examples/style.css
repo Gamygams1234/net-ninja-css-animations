@@ -52,7 +52,12 @@ animation-duration: 3s;
 animation-fill-mode: both;
 /* here we can put an number or we can make it infinite */
 animation-iteration-count: infinite;
+
+/*  this is how we control how the start and the end is */
+/*  we can do ease  */
+animation-timing-function: linear;
 }
+
 .luigi{
 
     position: absolute;
@@ -65,6 +70,7 @@ animation-iteration-count: infinite;
     animation-direction: reverse;
     /* goes back and forth */
     animation-direction: alternate;
+    animation-timing-function: ease-in;
 
 }
 
