@@ -82,7 +82,8 @@ animation-timing-function: linear;
   opacity: 0.5;
   /* this is how to make a shorthand function */
   /* we can add more properties to the the animation property to make it shorthand */
-  animation:wind 80s linear infinite reverse;
+  /* the second number is the delay */
+  animation:wind 80s 2s linear infinite reverse;
 }
 .cloud:nth-child(2){
   width: 300px;
