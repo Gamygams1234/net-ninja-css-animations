@@ -67,12 +67,30 @@ animation-timing-function: linear;
     animation-duration: 5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
+    animation-direction: both;
     /* goes back and forth */
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
+    animation-direction: both;
+    animation-timing-function: linear;
 
 }
+.cloud{
+  position: absolute;
+}
+.cloud:nth-child(1){
+  width: 200px;
+  top: 120px;
+  opacity: 0.5;
+  /* this is how to make a shorthand function */
+  /* we can add more properties to the the animation property to make it shorthand */
+  animation:wind 80s linear infinite reverse;
+}
+.cloud:nth-child(2){
+  width: 300px;
+  top: 0px;
+  animation:wind 50s linear infinite reverse;
+}
+
+
 
 /*// KEYFRAMES //*/
 
@@ -85,6 +103,16 @@ transform: translateX(-100px);
   }
   to{
     transform: translateX(1700px);
+  }
+}
+
+@keyframes wind{
+
+  from{
+left:-300px;
+  }
+  to{
+left: 100%;
   }
 }
 
