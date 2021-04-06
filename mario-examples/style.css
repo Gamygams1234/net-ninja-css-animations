@@ -43,14 +43,29 @@ html, body{
 
 .mario{
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 0;
   /* placing the name of the animation and the time of the animation */
 animation-name: drive;
-animation-duration: 5s;
+animation-duration: 3s;
 /* this will keep it at the end */
-animation-fill-mode: forwards;
-animation-delay: 2s;
+animation-fill-mode: both;
+/* here we can put an number or we can make it infinite */
+animation-iteration-count: infinite;
+}
+.luigi{
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* goes back and forth */
+    animation-direction: alternate;
+
 }
 
 /*// KEYFRAMES //*/
@@ -60,10 +75,10 @@ animation-delay: 2s;
 @keyframes drive{
 
   from{
-transform: translateX(0);
+transform: translateX(-100px);
   }
   to{
-    transform: translateX(500px);
+    transform: translateX(1700px);
   }
 }
 
